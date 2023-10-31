@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/general.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div id="logo">
+            <h2>PurityMasters</h2>
+        </div>
+
+        <!-- hamburgar -->
+        <div id="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Buttons or navigation links -->
+        <div id="buttons">
+            <a href="" class="buttons">
+                Home
+            </a>
+            <a href="" class="buttons">
+                About
+            </a>
+            <a href="" class="buttons">
+                Services
+            </a>
+            <a href="" class="buttons active">
+                Contact Us
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="wrapper">
+            <div id="content">
+                <h2>Contact Us</h2>
+                <div class="contacts">
+                    <div class="contact-card">
+                        <div class="icon img">
+                            <img src="assets/image/cust1.jpeg" alt="icon">
+                        </div>
+                        <div class="body">
+                            <h3>Talk to a member of our sales team</h3>
+                            <p>We'll help you find the right products and pricing for your business</p>
+                        </div>
+                        <div class="foot">
+                            <button id="contact_sales">Contact Sales</button>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="icon img">
+                            <img src="assets/image/cust2.png" alt="icon">
+                        </div>
+                        <div class="body">
+                            <h3>Product and account Support</h3>
+                            <p>Our help center is fresh and always open for business. You can't find the answer you're looking for? We're here to lend a hand</p>
+                        </div>
+                        <div class="foot">
+                            <button>Get Help</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="image" class="img">
+                <img src="assets/image/img1.jpeg" alt="image">
+            </div>
+        </div>
+        <div id="map" class="img">
+            <img src="assets/image/map.jpeg" alt="">
+        </div>
+    </main>
+
+    <div id="modal">
+        <form action="">
+            <div id="close_btn">
+                <span></span>
+                <span></span>
+            </div>
+            <h2>Contact Sales</h2>
+            <p>Let's get this conversation started. Tell us a bit about yourself and we'll get in touch as soon as we can</p>
+            <div class="form">
+                <div class="form-element">
+                    <label for="fname">Firstname</label>
+                    <input type="text" name="fname" id="fname" required>
+                </div>
+                <div class="form-element">
+                    <label for="lname">Lastname</label>
+                    <input type="text" name="lname" id="lname" required>
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-element">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <button style="width: 100%;">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const ham = document.querySelector("#ham");
+        const modal_button = document.querySelector("#contact_sales");
+        const modal = document.querySelector("#modal");
+        const not_form = document.querySelector("#modal > *:not(form)")
+        const modal_close_btn = document.querySelector("#close_btn");
+
+        ham.addEventListener("click", function(){
+            ham.classList.toggle("clicked");
+        })
+
+        modal_button.addEventListener("click", function(){
+            modal.style.display = "flex";
+        })
+
+        modal_close_btn.addEventListener("click", function(){
+            modal.style.display = "none";
+        })
+
+        not_form.addEventListener("click", function(){
+            modal.style.display = "none";
+        })
+    </script>
+</body>
+</html>
