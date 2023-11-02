@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    bottom: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.main{
+    width: 100vw;
+    min-height: 100vh;
+}
+.hero{
+    width: 100%;
+    position: relative;
+    background-image: url('./assets/images/cleaning-items-900x500.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.overlay{
+    position: absolute;
+    width: calc(100% - 4rem);
+    top: 0;
+    left: 0;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0,0, 0, 0.3);
+    gap: 1.5rem;
+    padding-left: 4rem;
+}
+
+.hero-head{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.hero-text{
+    width: 30rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.left-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+        min-width: 200px;
+}
+.right-intro{
+    width: 50%;
+    padding: 0 5rem;
+    color: #808080;
+    font-size: 1.1rem;
+}
+.intro-section{
+    margin: 1rem 0;
+}
+
+.intro{
+    display: flex;
+    margin: 2rem 0;
+}
+.intro-head{
+    color: #3498db;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.intro-img{
+    border-radius: 50%;
+    width: 400px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+.intro-img:hover img{
+    scale: 1.5;
+}
+.testimonials{
+    background-color:#d9d9d9;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: max-content;
+    transition: 0.3s ease;
+
+}
+.text-center{
+    text-align: center;
+}
+.view-all{
+    outline: 0;
+    border: 0;
+    padding: 0.5rem 1rem;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.view-all:hover{
+    background-color: white;
+    color: #3498db;
+}
+.testimonial-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5rem 1rem;
+    place-items: center;
+    height: 230px;
+    overflow-y: hidden;
+    transition: 0.3s ease;
+    gap: 2rem 1rem;
+}
+.testimonial-card{
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    padding: 1rem 2rem;
+    background-color: #e2dfeb;
+    width: 280px;
+    height: 180px;
+    transition: 0.5s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.testimonial-card:hover{
+    scale: 1.05;
+}
+.top-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom-card{
+    color: gray;
+}
+.profile-pic{
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    padding: 1rem;
+    font-weight: bold;    
+}
+.team-section{
+    padding: 2rem;
+}
+.team-left, .team-right{
+    width: 50%;
+}
+.team-left{
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+.team-left p{
+    width: 90%;
+}
+.team{
+    display: flex;
+    margin-top: 1rem;
+}
+.team-right{
+    border-radius: 2rem;
+}
+@media (max-width: 1130px) {
+    .testimonial-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 1024px) {
+.intro, .team{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.right-intro, .team-left{
+    width: 90%;
+}
+.intro-img, .team-right{
+    width: 90%;
+}
+.team{
+    flex-direction: column-reverse;
+}
+
+}
+
+@media (max-width: 768px) {
+    .hero-head{
+        font-size: 1.5rem;
+    }
+    .overlay{
+        gap: 0.5rem;
+    }
+    .hero-text{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 90%;
+    }
+    .testimonial-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .intro-img{
+        width: 100%;
+    }
+    .team-left, .team-right{
+    width: 100%;
+}
+
+}
