@@ -1,94 +1,44 @@
-/* Nav bar display and spacing of elements */
-nav{
+nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border: 1px solid lightgrey;
-    padding: 0 1em;
-    position: sticky;
-    top: 0;
-    background-color: var(--primary);
-    color: white;
-    z-index: 10;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* Menu links [called buttons] */
-#buttons{
-    display: flex;
-    gap: 0.1em;
+nav .logo {
+    width: 140px;
+    margin: -20px;
 }
 
-#buttons .buttons{
-    padding: 0.5em;
-    border-bottom: 1px solid transparent;
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
 }
 
-#buttons .buttons.active, #buttons .buttons:not(.active):hover{
-    border-bottom-color: #3f3f3f;
-    background-color: whitesmoke;
-    color: #3f3f3f;
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
 }
 
-/* hide the ham on large screens */
-#ham{
-    display: none;
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
 }
 
-/* Hamburgar should show on medium screens onwards */
-@media screen and (max-width: 768px){
-    /* nav{background-color: white;} */
-    #buttons{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 110%;
-        max-width: 320px;
-        width: calc(100% - 1em);
-        background-color: inherit;
-        right: 0.5em;
-        margin-left: 0.5em;
-    }
+nav ul li a:hover::after {
+    width: 100%;
+}
 
-    #ham{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-        cursor: pointer;
-    }
-
-    #ham span{
-        width: 1.8em;
-        height: 3px;
-        background-color: black;
-    }
-
-    /* when the ham is clicked to show the buttons */
-    #ham.clicked{
-        position: relative;
-        width: 2em;
-        height: 2em;
-    }
-
-    #ham.clicked + #buttons{
-        display: flex;
-    }
-
-    #ham.clicked span:nth-child(2){
-        display: none;
-    }
-
-    #ham.clicked span{
-        position: absolute;
-        right: 0;
-        top: 0.9em;
-        width: 2em;
-    }
-
-    #ham.clicked span:first-child{
-        transform: rotate(45deg);
-    }
-
-    #ham.clicked span:last-child{
-        transform: rotate(-45deg);
-    }
+.active-link {
+    color: blue;
+    
 }
