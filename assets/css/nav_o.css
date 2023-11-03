@@ -1,0 +1,94 @@
+/* Nav bar display and spacing of elements */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid lightgrey;
+    padding: 0 1em;
+    position: sticky;
+    top: 0;
+    background-color: var(--primary);
+    color: white;
+    z-index: 10;
+}
+
+/* Menu links [called buttons] */
+#buttons{
+    display: flex;
+    gap: 0.1em;
+}
+
+#buttons .buttons{
+    padding: 0.5em;
+    border-bottom: 1px solid transparent;
+}
+
+#buttons .buttons.active, #buttons .buttons:not(.active):hover{
+    border-bottom-color: #3f3f3f;
+    background-color: whitesmoke;
+    color: #3f3f3f;
+}
+
+/* hide the ham on large screens */
+#ham{
+    display: none;
+}
+
+/* Hamburgar should show on medium screens onwards */
+@media screen and (max-width: 768px){
+    /* nav{background-color: white;} */
+    #buttons{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110%;
+        max-width: 320px;
+        width: calc(100% - 1em);
+        background-color: inherit;
+        right: 0.5em;
+        margin-left: 0.5em;
+    }
+
+    #ham{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        cursor: pointer;
+    }
+
+    #ham span{
+        width: 1.8em;
+        height: 3px;
+        background-color: black;
+    }
+
+    /* when the ham is clicked to show the buttons */
+    #ham.clicked{
+        position: relative;
+        width: 2em;
+        height: 2em;
+    }
+
+    #ham.clicked + #buttons{
+        display: flex;
+    }
+
+    #ham.clicked span:nth-child(2){
+        display: none;
+    }
+
+    #ham.clicked span{
+        position: absolute;
+        right: 0;
+        top: 0.9em;
+        width: 2em;
+    }
+
+    #ham.clicked span:first-child{
+        transform: rotate(45deg);
+    }
+
+    #ham.clicked span:last-child{
+        transform: rotate(-45deg);
+    }
+}
