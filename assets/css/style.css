@@ -9,7 +9,7 @@
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(image/123_1200x1200.webp);
+    background-image: url(assets/image/123_1200x1200.webp);
     background-size: cover;
     background-position: center;
 }
@@ -142,7 +142,7 @@ a {
 }
 
 #services {
-    background-image: url(image/imagesss.jpg);
+    background-image: url(assets/image/imagesss.jpg);
     padding: -20px 0;
 
 }
