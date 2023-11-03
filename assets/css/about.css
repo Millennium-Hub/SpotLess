@@ -1,4 +1,49 @@
 
+.header{
+    width: 100vw;
+    height: 50px;
+    padding: 1rem 2rem;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    left: 0;
+    z-index: 10;
+    justify-content: space-evenly;
+}
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+ .nav-link{
+    background-color: white;
+    color: #3498db;
+    padding: 0.7rem 1.5rem;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    transition: 0.3s ease;
+}
+.logo{
+    width: 100px;
+}
+.logo:hover{
+    scale: 1.04;
+}
+.nav-link{
+    background-color: transparent;
+    color: white;
+}
+.nav-link:hover{
+    background-color: white;
+    color: #3498db;
+}
+.active{
+    background-color: #3498db;
+    color: white;
+}
+
 .main{
     width: 100vw;
     min-height: 100vh;
