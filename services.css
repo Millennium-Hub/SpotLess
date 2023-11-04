@@ -12,7 +12,7 @@
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url("assets/image/diamond-shine-cleaning-services-2.jpg");
+    background-image: url("assets/images/diamond-shine-cleaning-services-2.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -217,7 +217,7 @@ a {
     width: 100%;
 }
 .card-text{
-    font-size: 1.4vw;
+    font-size: normal;
 }
 
 @media (max-width: 1024px) {
