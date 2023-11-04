@@ -15,7 +15,7 @@ main .wrapper{
 /* The contact and contact cards */
 #content{
     background: rgb(52,152,219);
-background: linear-gradient(to top left, rgba(52,152,219,1) 30%, rgba(189,195,199,1) 75%, rgba(255,255,255,1) 95%);
+background: linear-gradient(to top left, rgba(255,255,255,1) 0%, rgba(189,195,199,1) 30%, rgba(52,152,219,1) 55%);
     min-height: 70vh;
     position: relative;
     padding: 1em;
