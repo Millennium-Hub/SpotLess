@@ -1,8 +1,6 @@
 
 .header{
     width: 100vw;
-    height: 50px;
-    padding: 1rem 2rem;
     background: transparent;
     position: absolute;
     top: 0;
@@ -11,12 +9,13 @@
     left: 0;
     z-index: 10;
     justify-content: space-evenly;
+    color: white;
 }
 .nav-links{
     display: flex;
     gap: 2rem;
 }
- .nav-link{
+.nav-link{
     background-color: white;
     color: #3498db;
     padding: 0.7rem 1.5rem;
@@ -55,7 +54,7 @@ a{
 .hero{
     width: 100%;
     position: relative;
-    background-image: url('./assets/image/diamond-shine-cleaning-services-2.jpg');
+    background-image: url('../image/diamond-shine-cleaning-services-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -92,6 +91,7 @@ a{
     place-items: center;
     color: white;
     gap: 2rem 1rem;
+    text-align: center;
 }
 .text-center{
     text-align: center;

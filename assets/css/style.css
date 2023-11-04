@@ -12,6 +12,7 @@
     background-image: url("../image/123_1200x1200.webp");
     background-size: cover;
     background-position: center;
+    color: white;
 }
 
 .container {
