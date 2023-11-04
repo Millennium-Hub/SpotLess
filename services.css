@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+ 
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/images/diamond-shine-cleaning-services-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+    top: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+ 
+
+}
+
+
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3498db;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 10%;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text .btn {
+    margin-right: 150px;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+
+
+.btn {
+    display: block;
+    margin: 25px auto;
+    width: fit-content;
+    border: 1px solid #3498db;
+    padding: 14px 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: backgroung 0.5s;
+    background-color: #3498db;
+    margin-right: 360px;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+.btn_2 {
+    display: block;
+    margin: 25px auto;
+    width: fit-content;
+    border: 1px solid #3498db;
+    padding: 14px 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: backgroung 0.5s;
+    background-color: #3498db;
+    margin-right: 420px;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.btn_2:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+.btn_3 {
+    display: block;
+    margin: 25px auto;
+    width: fit-content;
+    border: 1px solid #3498db;
+    padding: 7px 25px;
+    text-decoration: none;
+    color: #fff;
+    transition: backgroung 0.5s;
+    background-color: #3498db;
+    margin-right: 420px;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+}
+
+.btn_3:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+.btn_4 {
+    display: block;
+    margin: 25px auto;
+    width: fit-content;
+    border: 1px solid #3498db;
+    padding: 7px 25px;
+    text-decoration: none;
+    color: #fff;
+    transition: backgroung 0.5s;
+    background-color: #3498db;
+    margin-right: 470px;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+}
+
+.btn_4:hover {
+    background-color: #fff;
+    color: #3498db;
+}
+
+/*Services */
+
+.services{
+    padding: 1rem 2rem;
+    background-color: #d9d9d9;
+}
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    color: white;
+    gap: 2rem 1rem;
+    text-align: center;
+}
+.text-center{
+    text-align: center;
+}
+.services-card{
+    padding: 1rem 3rem;
+    color: gray;
+    background-color: white;
+    border-radius: 1.5rem;
+    width: 300px;
+    cursor: pointer;
+}
+.services-card img{
+    border-radius: 1rem;
+    transition: 0.3s ease;
+    margin-left: -25px;
+
+}
+.services-card:hover img{
+    filter: brightness(85%);
+}
+.services-card-head{
+    margin-bottom: 1rem;
+}
+.services-head{
+    color: #3498db;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* FOOTER */
+
