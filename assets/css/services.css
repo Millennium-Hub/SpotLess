@@ -1,9 +1,22 @@
-/* Header and Nav*/
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+ 
+}
+
+body{
+    overflow-x: hidden;
+}
 
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url("assets/images/123_1200x1200.webp");
+    background-image: url("../images/diamond-shine-cleaning-services-2.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -12,55 +25,11 @@
     padding: 10px 10%;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 140px;
-    top: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 10px 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    position: relative;
- 
-
-}
-
-
-
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #3498db;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
 .header-text {
     margin-top: 10%;
     font-size: 30px;
     color: #fff;
-    text-align: right;
+    text-align: center;
 }
 
 .header-text h1 {
@@ -74,9 +43,7 @@ nav ul li a:hover::after {
 
 a {
     text-decoration: none;
-  }
-  
-
+}
 
 .btn {
     display: block;
@@ -161,3 +128,92 @@ a {
     background-color: #fff;
     color: #3498db;
 }
+
+/*Services */
+
+.services{
+    padding: 1rem 2rem;
+    background-color: #d9d9d9;
+}
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    color: white;
+    gap: 2rem 1rem;
+}
+.text-center{
+    text-align: center;
+}
+.services-card{
+    padding: 1rem 2rem;
+    color: gray;
+    background-color: white;
+    border-radius: 1.5rem;
+    width: 80%;
+    max-width: 300px;
+    cursor: pointer;
+}
+.services-card img{
+    border-radius: 1rem;
+    transition: 0.3s ease;
+    width: 100%;
+}
+.services-card:hover img{
+    filter: brightness(85%);
+}
+.services-card-head{
+    margin-bottom: 1rem;
+    font-size: 1.8vw;
+}
+.services-head{
+    color: #3498db;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.card-info{
+    width: 100%;
+}
+.card-text{
+    font-size: normal;
+}
+
+@media (max-width: 1024px) {
+    .services-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-text{
+        font-size: 1.8vw;
+    }
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+    .services-card-head{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-text{
+        font-size: 1rem;
+    }
+    .overlay{
+        padding-left: 0;
+        align-items: center;
+    }
+    
+    .services-card-head{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 450px) {
+    .services-card-head{
+        font-size: 1.1rem;
+    }
+   
+}
+
+/* FOOTER */

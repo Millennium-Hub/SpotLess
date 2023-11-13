@@ -5,14 +5,12 @@
 }
 
 *{
-
     transition: all 0.25s;
     line-height: 1.5;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
 }
 
 body{
@@ -37,7 +35,9 @@ body > *:last-child{
 }
 
 /* links should take the effects of their parent element */
-
+a {
+    text-decoration: none;
+}
 
 /* High pixled images formating */
 .img img{
@@ -47,11 +47,16 @@ body > *:last-child{
     object-position: center;
 }
 
-/* general button display */
-button{
+/* general button display */ 
+button.def_btn{
     padding: 1em;
     text-align: center;
     border: thin solid var(--secondary);
     background-color: white;
     cursor: pointer;
+}
+
+/* hide bullets and numbering for lists in nav and footer */
+nav ul, nav ol, footer ul, footer ol{
+    list-style: none;
 }
