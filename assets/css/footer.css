@@ -83,3 +83,33 @@ footer button {
     cursor: pointer;
 }
 
+footer li{
+    list-style: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    footer input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer button {
+        width: 100%;
+    }
+}

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpotLess | Homepage</title>
-    <link rel="stylesheet" href="assets/css/general.css" />
     <link rel="stylesheet" href="assets/css/nav.css">
+ 
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -15,12 +15,14 @@
             <!-- Navigation menu -->
             <nav>
                 <img src="assets/images/logo.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About Us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <h1>We're a bunch of bros<br>who clean like a pro</h1>
@@ -33,6 +35,11 @@
     <div id="about">
         <div class="container">
             <div class="row">
+
+                <div class="about-col-2">
+                    <img src="assets/images/backimg.jpg">
+                </div>
+                
                 <div class="about-col-1">
                     <h1 class="sub-title">Get to know us</h1>
                     <p>
@@ -57,9 +64,7 @@
                     </div>
                 </div>
 
-                <div class="about-col-2">
-                    <img src="assets/images/backimg.jpg">
-                </div>
+                
             </div>
         </div>
     </div>
@@ -110,7 +115,7 @@
 
     <!-- Testimonials -->
 
-      <div class="testimonials">
+      <!-- <div class="testimonials">
         <h2 class="intro-head text-center">Testimonials</h2>
         <div class="container">
             <div class="row">
@@ -148,6 +153,8 @@
         </div>
     </div>
 
+    !-->
+
     <!-- Footer -->
     <footer>
         <div class="container footer-container">
@@ -169,8 +176,8 @@
             <div>
                 <h4>Contact</h4>
                 <div>
-                    <p class="links">Email : exemple@gmail.com </p><br>
-                    <p class="links">Phone : +233 14 504 5093</p>
+                    <p class="links">Email : Spot@gmail.com </p><br>
+                    <p class="links">Phone : 059 38 94 256</p>
                 </div>
             </div>
         </div>
@@ -190,5 +197,20 @@
             <small> 2023© Copyright by Spotless. All Rights reserved.</small>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/f4fd64e6e5.js" crossorigin="anonymous"></script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
 </body>
 </html>

@@ -7,10 +7,6 @@
     list-style: none;
 }
 
-body{
-    overflow-x: hidden;
-}
-
 /* add header banner image */
 #header {
     background-image: url("../images/123_1200x1200.webp");
