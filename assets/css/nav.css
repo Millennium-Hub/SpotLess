@@ -8,10 +8,6 @@
     background-position: center;
 }
 
-.container {
-    padding: 10px 10%;
-}
-
 nav {
     display: flex;
     align-items: center;
@@ -188,12 +184,6 @@ nav .fa-solid {
 
 
 @media screen and (max-width: 768px) {
-
-   
-.container {
-    max-width: 540px;
-}
-
     #header {
         height: 70vh;
     }
