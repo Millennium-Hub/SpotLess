@@ -229,7 +229,7 @@ nav ul {
     background: #3498db;
     position: fixed;
     top: 0;
-    right: -200px;
+    right: -80%;
     width: 200px;
     height: 50vh;
     border-radius: 12px;
