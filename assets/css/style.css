@@ -145,16 +145,16 @@ body{
 
 /* Testimonial */
 
-.testimonials {
+#testimonials {
     padding: 50px 0;
     background-color: #f3f2f2;
 }
 
-.testimonials .sub-title {
+#testimonials .sub-title {
     color: rgb(202, 199, 199);
 }
 
-.testimonials h2 {
+#testimonials h2 {
     color: #3498db ;
     font-size: 3rem;
 }
@@ -202,15 +202,22 @@ body{
     font-weight: bold;    
 }
 
+
+
+
 /* Responsive part*/
+
+
+
 
 @media screen and (max-width: 768px) {
 
-    .container {
-        max-width: 768px;
-    }
+   
+.container {
+   max-width: 540px;
+}
     .sub-title {
-        font-size: 38px;
+        font-size: 30px;
         text-align: center;
     }
     
@@ -227,7 +234,15 @@ body{
         margin-right: 20px;
     }
 
-    
+    .intro-head  {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .center {
+        text-align: center;
+    }
+
+ 
     
 }
 

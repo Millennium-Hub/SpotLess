@@ -16,7 +16,7 @@
             <nav>
                 <img src="assets/images/logo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active-link"><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -115,21 +115,20 @@
 
     <!-- Testimonials -->
 
-      <!-- <div class="testimonials">
-        <h2 class="intro-head text-center">Testimonials</h2>
+    <div id="testimonials">
         <div class="container">
+            <h2 class="intro-head text-center">Testimonials</h2>
             <div class="row">
-                <div class="testimonial-col-1">
+                
+                <div class="about-col-1">
                     <h1 class="sub-title">What they say<br> about us</h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing <br>
-                        expedita culpa id voluptatem ipsum. Quo libero ac <br>
-                        dae nisi incidunt voluptas magnam alias asperiores  <br>
-                        glqllqre  hjdjlhlklk hlhllhlhiriirhhf jahlhclljjll<br>
-                        
+                    <p class="center">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui id natus ipsam voluptate similique! Ea animi excepturi ipsa eaque dolorem. Iure alias, quibusdam ex placeat id possimus commodi saepe rem.
                     </p>
-                    <a href="about.html" class="btn_4">view all</a>
-
+                    <br><br>
+                 
                 </div>
+
 
                 <div class="testimonial-col-2">
                     <article class="testimonial-card">
@@ -146,14 +145,18 @@
                             doloremque veniam eum tempore harum. Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Eos, aliquid?
                           </p>
+                         
                         </div>
                       </article>
                 </div>
+                <a href="about.html" class="btn_2">view all</a>
             </div>
         </div>
     </div>
 
-    !-->
+ 
+
+  
 
     <!-- Footer -->
     <footer>
@@ -198,18 +201,21 @@
         </div>
     </footer>
 
-    <script src="https://kit.fontawesome.com/f4fd64e6e5.js" crossorigin="anonymous"></script>
+ <!-- fontawesome script -->
 
+<script src="https://kit.fontawesome.com/f4fd64e6e5.js" crossorigin="anonymous"></script>
+
+<!-- Menu script-->
 <script>
-    var sidemenu = document.getElementById("sidemenu");
+  var sidemenu = document.getElementById("sidemenu");
 
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
+  function openmenu() {
+      sidemenu.style.right = "0";
+  }
 
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
+  function closemenu() {
+      sidemenu.style.right = "-200px";
+  }
 </script>
 
 </body>

@@ -14,14 +14,16 @@
       <div class="container">
           <!-- Navigation menu -->
           <nav>
-              <img src="assets/images/logo.png" class="logo">
-              <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="services.html" class="active-link">Services</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="about.html">About Us</a></li>
-              </ul>
-          </nav>
+            <img src="assets/images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
           <div class="header-text">
               <h1>  Our services are just a scratch of the surfaces</h1>
           </div>
@@ -133,6 +135,22 @@
           <small> 2023© Copyright by Spotless. All Rights reserved.</small>
       </div>
   </footer>
-<!--     <script></script> -->
+
+  <!-- fontawesome script -->
+
+<script src="https://kit.fontawesome.com/f4fd64e6e5.js" crossorigin="anonymous"></script>
+
+<!-- Menu script-->
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu() {
+      sidemenu.style.right = "0";
+  }
+
+  function closemenu() {
+      sidemenu.style.right = "-200px";
+  }
+</script>
   </body>
 </html>

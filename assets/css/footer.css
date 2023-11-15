@@ -92,7 +92,7 @@ footer li{
 @media screen and (max-width: 768px) {
 
     .container {
-        max-width: 768px;
+        max-width: 540px;
     }
     
     .footer-container {
@@ -112,4 +112,6 @@ footer li{
     footer button {
         width: 100%;
     }
+
+  
 }
