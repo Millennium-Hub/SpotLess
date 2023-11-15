@@ -55,7 +55,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 10%;
+    /* margin-top: 10%; */
     font-size: 30px;
     color: #fff;
     text-align: right;
@@ -165,7 +165,7 @@ nav .fa-solid {
 @media screen and (max-width: 1024px) {
 
     #header {
-        height: 70vh;
+        min-height: 70vh;
     }
 
 
@@ -199,7 +199,7 @@ nav .fa-solid {
     }
 
   .header-text {
-    margin-top: 20%;
+    /* margin-top: 20%; */
     font-size: 15px;
     color: #fff;
 
