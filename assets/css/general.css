@@ -60,3 +60,8 @@ button.def_btn{
 nav ul, nav li, footer ul, footer li{
     list-style: none;
 }
+
+/* container tweaks */
+.container {
+    padding: 10px 10%;
+}
