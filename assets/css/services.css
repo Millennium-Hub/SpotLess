@@ -26,6 +26,7 @@ body{
     padding: 1rem 2rem;
     background-color: #d9d9d9;
 }
+
 .services-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -41,8 +42,8 @@ body{
     color: gray;
     background-color: white;
     border-radius: 1.5rem;
-    width: 80%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 320px;
     cursor: pointer;
 }
 .services-card img{
@@ -100,6 +101,13 @@ body{
         font-size: 1.2rem;
     }
 }
+
+@media screen and (max-width: 540px){
+    .services{
+        padding: 1em;
+    }
+}
+
 @media (max-width: 450px) {
     .services-card-head{
         font-size: 1.1rem;

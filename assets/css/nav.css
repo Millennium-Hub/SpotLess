@@ -1,9 +1,5 @@
 /* Header and Nav*/
-
 #header {
-    /* width: 100%; */
-    height: 100vh;
-    /* background-image: url("assets/images/123_1200x1200.webp"); */
     background-size: cover;
     background-position: center;
 }
@@ -142,21 +138,9 @@ nav .fa-solid {
     #header {
         min-height: 70vh;
     }  
-  }
-
-  @media screen and (max-width: 992px)  {
-    #header {
-        height: 60vh;
-    }
-  }
-
-
+}
 
 @media screen and (max-width: 768px) {
-    #header {
-        height: 70vh;
-    }
-
     .header-text {
         /* margin-top: 20%; */
         font-size: 15px;
@@ -188,11 +172,12 @@ nav .fa-solid {
         top: 0;
         right: -80%;
         width: 200px;
-        height: 50vh;
+        min-height: 50vh;
         border-radius: 12px;
         padding-top: 50px;
         z-index: 2;
         transition: 0.5s;
+        overflow: auto;
     }
 
     nav ul li {
@@ -210,4 +195,9 @@ nav .fa-solid {
 
 }
 
+@media screen and (max-width: 540px){
+    #header .container{
+        padding: 0.5em;
+    }
+}
 

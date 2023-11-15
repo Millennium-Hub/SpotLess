@@ -18,6 +18,12 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 1020px;
+    margin: auto;
+}
+
+.row > *{
+    flex: 1 1 auto;
 }
 
 .about-col-1 {
@@ -142,7 +148,7 @@ body{
 
 #testimonials h2 {
     color: #3498db ;
-    font-size: 3rem;
+    font-size: 2.5em;
 }
 
 .testimonial-col-1 {
