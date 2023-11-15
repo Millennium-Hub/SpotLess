@@ -63,5 +63,15 @@ nav ul, nav li, footer ul, footer li{
 
 /* container tweaks */
 .container {
-    padding: 10px 10%;
+    padding: 1em 3em;
+}
+
+main .container{
+    padding: 1em 2em;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        padding: 1em 1.25em;
+    }
 }

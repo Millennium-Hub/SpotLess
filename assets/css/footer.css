@@ -1,7 +1,7 @@
 /*footer */
 footer{
     background-color: #7fc1ec;
-    padding-top: 2rem;
+    padding: 2rem;
 }
 
 .logo_footer {
@@ -22,29 +22,35 @@ footer{
 .footer-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12rem;
+    gap: 2rem;
 }
 
-.links {
+.footer-container > div{
+    padding: 0.75em 1em;
+}
+
+footer ul.links {
     color: black;
     font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
 }
 
-.links a {
+footer .links a {
     color: black;
     font-size: 1.2rem;
+    text-decoration: none;
 }
 
-h4 {
+footer h4 {
     font-size: 1.7rem;
 }
 
 .footer-container > div h4 {
     margin-bottom: 1.2rem;
-}
-
-footer ul li{
-    margin-bottom: 0.7rem;
 }
 
 footer ul li a:hover{
@@ -83,21 +89,12 @@ footer button {
     cursor: pointer;
 }
 
-footer li{
-    list-style: none;
-}
 
 
-
-@media screen and (max-width: 768px) {
-
-    .container {
-        max-width: 540px;
-    }
-    
+@media screen and (max-width: 768px) {    
     .footer-container {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 0.5em;
     }
 
     .newsletter-form {
@@ -113,5 +110,13 @@ footer li{
         width: 100%;
     }
 
-  
+    footer .container{
+        padding: 0.25em;
+    }
+
+    @media screen and (max-width: 540px){
+        footer{
+            padding: 1em;
+        }
+    }
 }

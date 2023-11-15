@@ -1,7 +1,7 @@
 /* Header and Nav*/
 
 #header {
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     /* background-image: url("assets/images/123_1200x1200.webp"); */
     background-size: cover;
@@ -145,9 +145,6 @@ nav .fa-solid {
   }
 
   @media screen and (max-width: 992px)  {
-    .container {
-        max-width: 740px;
-    }
     #header {
         height: 60vh;
     }

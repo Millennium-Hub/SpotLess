@@ -209,9 +209,6 @@ body{
 
 /* Responsive part*/
 @media screen and (max-width: 768px) {
-    .container {
-    max-width: unset;
-    }
     .sub-title {
         font-size: 30px;
         text-align: center;
