@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 /* Header and Nav*/
 *{
     margin: 0;
@@ -53,6 +56,8 @@
     width: 30rem;
     font-size: 1.2rem;
     line-height: 2rem;
+    margin-left: 650px;
+    text-align: center;
 }
 
 .left-intro{
@@ -191,7 +196,28 @@ img{
     .testimonial-cards{
         grid-template-columns: repeat(2,1fr);
     }
+   
 }
+
+
+
+@media (max-width: 1200px) {
+    .btn{
+        margin-left: 650px;
+         font-size: 1.2rem;
+       
+     }
+     .hero-text{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 50%;
+        margin-left: 500px;
+        
+    }
+    
+   
+}
+
 
 @media (max-width: 1024px) {
     .intro, .team{
@@ -211,6 +237,37 @@ img{
     }
     .header-text h1{
         font-size: 3rem;
+        margin-left: 10px;
+    }
+    .btn{
+        margin-left: 530px;
+         font-size: 1.2rem;
+       
+     }
+     .hero-text{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 50%;
+        margin-left: 400px;
+        text-align: center;
+        
+    }
+  
+}
+
+@media (max-width: 998px) {
+    .btn{
+        margin-left: 330px;
+         font-size: 1.2rem;
+       
+     }
+     .hero-text{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 50%;
+        margin-left: 260px;
+        text-align: center;
+        
     }
 }
 
@@ -225,6 +282,7 @@ img{
         font-size: 1.1rem;
         line-height: 1.5rem;
         width: 90%;
+        margin-left: 50px;
         
     }
     .testimonial-cards{
@@ -238,13 +296,37 @@ img{
         
     }
     .btn{
-        padding: 0.8rem 1.5rem;
+       margin-left: 250px;
         font-size: 1.2rem;
-        margin-left: 0;
+      
     }
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 540px) {
+    .btn{
+        margin-left: 160px;
+         font-size: 1.2rem;
+       
+     }
+     .hero-text{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 50%;
+        margin-left: 130px;
+        text-align: center;
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero-text{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 90%;
+        margin-left: 18px;
+        
+    }
+    
     .intro-img{
         width: 100%;
     }
@@ -252,10 +334,35 @@ img{
         width: 100%;
     }
     .header-text h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .btn{
-        padding: 0.5rem 1rem;
+        margin-left: 95px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    
+    .hero-text{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 90%;
+        margin-left: 18px;
+        
+    }
+    
+    .intro-img{
+        width: 100%;
+    }
+    .team-left, .team-right{
+        width: 100%;
+    }
+    .header-text h1{
+        font-size: 1.8rem;
+    }
+    .btn{
+        margin-left: 80px;
         font-size: 1.1rem;
     }
 }
