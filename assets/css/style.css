@@ -134,6 +134,7 @@ body{
 
 .service:hover .content {
     height: 100%;
+    color: white;
 }
 
 /* Testimonial */
