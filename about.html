@@ -25,7 +25,8 @@
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
+          </nav>
+
           <div class="header-text">
             <h1 class="hero-head">"Our actions define us"</h1>
             <p class="hero-text">
@@ -34,31 +35,30 @@
               excellence in laundry care as we redefine cleanliness with every action we take. Experience the SpotLess touch that 
               goes beyond service to define a standard of pristine quality
             </p>
-              <a href="#" class="btn">Book Now</a>
+            <a href="#" class="btn">Book Now</a>
           </div>
-          
       </div>
-  </div>
+    </div>
+    
     <main class="main">
-     
       <!-- intro -->
       <section class="intro-section">
         <h2 class="intro-head text-center">Who are we?</h2>
         <div class="intro">
-            <article class="left-intro">
-                <div class="intro-img">
-                  <img
-                    src="./assets/images/Kols-cleaning-house-cleaning-services-button.jpg"
-                    alt="who we are"
-                  />
-                </div>
-              </article>
-              <article class="right-intro">
-                <p>At SpotLess, we're more than just a laundry service. We're a team of dedicated professionals with a passion for cleanliness and care. Our journey began with a simple vision – to take the hassle out of laundry and make your life easier.</p>
-                <p>For years, we've been committed to providing top-notch laundry solutions. Our experts understand the nuances of fabric care and stain removal like no other. We embrace innovation, implementing eco-friendly practices to ensure our planet stays as clean as your garments.</p>
-                <p>We're not just about washing clothes; we're about delivering convenience and quality. Our friendly team is here to serve you with a smile, whether you're a homeowner looking for fresh linens or a hotel manager ensuring pristine rooms.</p>
-                <p>Why choose us? Because we're more than just a laundry service. We're your partner in cleanliness, ensuring your garments and fabrics receive the utmost care and attention they deserve. Discover the SpotLess difference today.</p>
-              </article>
+          <article class="left-intro">
+            <div class="intro-img img">
+              <img
+                src="./assets/images/Kols-cleaning-house-cleaning-services-button.jpg"
+                alt="who we are"
+              />
+            </div>
+          </article>
+          <article class="right-intro">
+            <p>At SpotLess, we're more than just a laundry service. We're a team of dedicated professionals with a passion for cleanliness and care. Our journey began with a simple vision – to take the hassle out of laundry and make your life easier.</p>
+            <p>For years, we've been committed to providing top-notch laundry solutions. Our experts understand the nuances of fabric care and stain removal like no other. We embrace innovation, implementing eco-friendly practices to ensure our planet stays as clean as your garments.</p>
+            <p>We're not just about washing clothes; we're about delivering convenience and quality. Our friendly team is here to serve you with a smile, whether you're a homeowner looking for fresh linens or a hotel manager ensuring pristine rooms.</p>
+            <p>Why choose us? Because we're more than just a laundry service. We're your partner in cleanliness, ensuring your garments and fabrics receive the utmost care and attention they deserve. Discover the SpotLess difference today.</p>
+          </article>
         </div>
       </section>
       <!-- testimonials -->
@@ -183,7 +183,7 @@
             </div>
           </article>
         </div>
-        <button class="view-all" id="view-all">view all</button>
+        <button class="view-all" id="view-all">View All</button>
       </section>
 
       <!-- team -->
@@ -217,7 +217,7 @@
               </p>
             </div>
           </article>
-          <article class="team-right">
+          <article class="team-right img">
             <img src="./assets/images/leaders.jpg" alt="management team" />
           </article>
         </div>
@@ -279,10 +279,10 @@
       
       const showAllTestimonies = () => {
         if (viewAll.textContent === "view few") {
-          viewAll.textContent = "view all";
+          viewAll.textContent = "View All";
           testimonialCards.style.height = "230px";
         } else {
-          viewAll.textContent = "view few";
+          viewAll.textContent = "View Few";
           testimonialCards.style.height = `${testimonialCards.scrollHeight}px`;
         }
       };

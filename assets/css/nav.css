@@ -10,6 +10,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: rgba(47, 153, 199, 0.3);
 }
 
 .logo {
@@ -48,19 +49,26 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    /* margin-top: 10%; */
-    font-size: 30px;
     color: #fff;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+    width: fit-content;
+    margin-left: auto;
+    margin-top: auto;
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 36pt;
+    font-size: xxx-large;
     margin-top: 20px;
 }
 
 .header-text .btn {
-    margin-right: 150px;
+    margin: auto;
+    align-self: center;
+    justify-self: center;
 }
 
 /* header buttons */
@@ -134,11 +142,12 @@ nav .fa-solid {
 
 /* responsive part */
 
-@media screen and (max-width: 1024px) {
-
-    #header {
-        min-height: 70vh;
-    }  
+@media screen and (max-width: 1020px){
+    .header-text{
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -148,21 +157,12 @@ nav .fa-solid {
        
      }
     .header-text {
-        /* margin-top: 20%; */
         font-size: 15px;
         color: #fff;  
     }
 
     .header-text h1 {
-        font-size: 25px;
         text-align: center;
-    
-    }
-
-
-    .header-text .btn {
-        margin-right: 50px;
-        margin-top: 50px;
     }
 
     nav .fa-solid {
@@ -201,9 +201,14 @@ nav .fa-solid {
 
 }
 
-@media screen and (max-width: 540px){
+@media screen and (max-width: 560px){
     #header .container{
         padding: 0.5em;
+    }
+
+    .header-text h1{
+        font-size: 24pt;
+        font-size: xx-large;
     }
 }
 
