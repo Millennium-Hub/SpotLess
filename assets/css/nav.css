@@ -76,17 +76,16 @@ nav ul li a:hover::after {
 .btn {
     display: block;
     margin: 25px auto;
-    width: fit-content;
+    min-width: 10em;
+    width: max-content;
     border: 1px solid #3498db;
     padding: 14px 50px;
     text-decoration: none;
     color: #fff;
-    transition: backgroung 0.5s;
     background-color: #3498db;
-    margin-left: 790px;
     font-weight: bold;
-    border-radius: 1.5rem;
-    font-size: 1.3rem;
+    border-radius: 0.25rem;
+    font-size: large;
 }
 
 .btn:hover {

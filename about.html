@@ -278,7 +278,7 @@
       const viewAll = document.querySelector("#view-all");
       
       const showAllTestimonies = () => {
-        if (viewAll.textContent === "view few") {
+        if (viewAll.textContent.toLowerCase() === "view few") {
           viewAll.textContent = "View All";
           testimonialCards.style.height = "230px";
         } else {
