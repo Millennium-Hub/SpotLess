@@ -178,15 +178,27 @@ img{
 }
 .team-left{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
     color: gray;
 }
+
+.team-member{
+    padding: 0.75em 1em;
+    background-color: #f7f7f7;
+}
+
+.team-member:hover{
+    box-shadow: 0 0 5px 0 lightgrey,  0 0 3px #5a5a5a;
+}
+
 .team-left p{
     width: 90%;
 }
 .team{
     display: flex;
     margin-top: 1rem;
+    gap: 1em;
 }
 .team-right{
     border-radius: 2rem;
